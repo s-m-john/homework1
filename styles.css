@@ -100,11 +100,10 @@ body {
     border: 1px solid #000;
     /* Add border radius for a more rounded look */
     border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
     background-color: rgb(136, 205, 115, 0.5);
     text-align: right; /* Align the text to the right just like on a calculator*/
   }
-  
-  /* Your existing styles ... */
 
 .instruction-box {
     background-color: rgba(136, 205, 115, 0.5); /* Transparent green background */
