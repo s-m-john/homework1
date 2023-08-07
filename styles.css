@@ -2,12 +2,17 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif; /* Use a calculator-like font family */
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  /* Center the title */
+  h1 {
+    text-align: center;
   }
   
   /* Style the container for the calculator */
   .calculator-container {
-    width: 300px;
+    width: 400px; /* Increase the width to make the container bigger */
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -16,33 +21,63 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Style the input fields and labels in red */
+  /* Style the input fields and labels */
   .input-field,
   label {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 18px; /* Increase the font size for the input fields and labels */
-    text-align: right; /* Right-align the text in the input fields and labels */
+  }
+  
+  /* Style the label in red */
+  label {
     color: red; /* Set the text color to red */
+  }
+  
+  /* Style the input area with black text */
+  .input-field {
+    color: black; /* Set the text color to black */
+  }
+  
+  /* Use flexbox to align labels and input fields side by side */
+  .input-row {
+    display: flex;
+    align-items: center;
   }
   
   /* Style the "Submit" button (previously "Calculate" button) */
   .submit-btn {
-    display: block; /* Make the button a block element */
-    width: 100%;
+    display: block;
+    width: 30%;
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #007bff; 
+    background-color: #007bff; /* Blue background color */
     color: #fff;
-    font-size: 20px; /* Increase the font size for the button */
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
     cursor: pointer;
     margin-top: 20px; /* Add margin at the top for spacing */
   }
   
   /* Center the "Submit" button */
-  .calculator-container .submit-btn {
+  .submit-btn-container {
     text-align: center;
+  }
+  
+  /* Style the result display area */
+  .result {
+    font-size: 18px; /* Adjust the font size for the result */
+    font-weight: bold;
+    margin-top: 15px; /* Add margin at the top for spacing */
+    text-align: center; /* Center the text in the result area */
+  }
+
+  .result {
+    font-size: 18px; /* Adjust the font size for the result */
+    font-weight: bold;
+    margin-top: 15px; /* Add margin at the top for spacing */
+    text-align: left; 
   }
   
