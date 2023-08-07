@@ -15,6 +15,9 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+    background-image: url("images/calculator-background.jpg");
+    background-size: cover;
+    background-repeat: repeat;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Add box-shadow for 3D effect */
 }
