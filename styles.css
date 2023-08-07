@@ -58,12 +58,8 @@ body {
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     cursor: pointer;
+    margin: 0 auto; /* Center the button using margin auto */
     margin-top: 20px; /* Add margin at the top for spacing */
-  }
-  
-  /* Center the "Submit" button */
-  .submit-btn-container {
-    text-align: center;
   }
   
   /* Style the result display area */
@@ -71,13 +67,6 @@ body {
     font-size: 18px; /* Adjust the font size for the result */
     font-weight: bold;
     margin-top: 15px; /* Add margin at the top for spacing */
-    text-align: center; /* Center the text in the result area */
-  }
-
-  .result {
-    font-size: 18px; /* Adjust the font size for the result */
-    font-weight: bold;
-    margin-top: 15px; /* Add margin at the top for spacing */
-    text-align: left; 
+    text-align: left; /* Align the text to the left */
   }
   
