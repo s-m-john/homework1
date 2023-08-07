@@ -34,7 +34,7 @@ body {
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #4CAF50; /* Green background color */
+    background-color: #007bff; 
     color: #fff;
     font-size: 20px; /* Increase the font size for the button */
     cursor: pointer;
