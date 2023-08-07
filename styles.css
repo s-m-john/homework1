@@ -16,19 +16,20 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Style the input fields */
-  .input-field {
+  /* Style the input fields and labels in red */
+  .input-field,
+  label {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 18px; /* Increase the font size for the input fields */
-    text-align: right; /* Right-align the text in the input fields */
+    font-size: 18px; /* Increase the font size for the input fields and labels */
+    text-align: right; /* Right-align the text in the input fields and labels */
+    color: red; /* Set the text color to red */
   }
   
   /* Style the "Submit" button (previously "Calculate" button) */
   .submit-btn {
+    display: block; /* Make the button a block element */
     width: 100%;
     padding: 10px;
     border: none;
@@ -37,6 +38,7 @@ body {
     color: #fff;
     font-size: 20px; /* Increase the font size for the button */
     cursor: pointer;
+    margin-top: 10px; /* Add margin at the top to separate from the labels */
   }
   
   /* Style the plus sign */

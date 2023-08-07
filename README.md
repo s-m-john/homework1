@@ -18,7 +18,7 @@ npm init -y
 
 npm install express localtunnel
 
-node server.js
+node server.js (run this when ever the server is down/stops working)
 
 npm install -g localtunnel
 
