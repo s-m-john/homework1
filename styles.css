@@ -1,18 +1,16 @@
-/* Reset default margins and paddings for the whole page */
+/* Your existing CSS styles */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Mono', monospace;
   }
   
-  /* Center the title */
   h1 {
     text-align: center;
   }
   
-  /* Style the container for the calculator */
   .calculator-container {
-    width: 400px; /* Increase the width to make the container bigger */
+    width: 400px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -21,52 +19,63 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
-  /* Style the input fields and labels */
   .input-field,
   label {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    font-size: 18px; /* Increase the font size for the input fields and labels */
+    font-size: 18px;
   }
   
-  /* Style the label in red */
   label {
-    color: red; /* Set the text color to red */
+    color: red;
   }
   
-  /* Style the input area with black text */
   .input-field {
-    color: black; /* Set the text color to black */
+    color: black;
   }
   
-  /* Use flexbox to align labels and input fields side by side */
   .input-row {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the content horizontally */
   }
   
-  /* Style the "Submit" button (previously "Calculate" button) */
+  /* Adjust the position and spacing between the elements in the input row */
+  .input-row label,
+  .input-row input {
+    margin-right: 5px;
+  }
+  
+  .fa-plus {
+    margin-left: 200px; /* Move the plus sign more to the right */
+    margin-top: -10px;
+  }
+  
   .submit-btn {
     display: block;
     width: 30%;
     padding: 10px;
     border: none;
     border-radius: 3px;
-    background-color: #007bff; /* Blue background color */
+    background-color: #007bff;
     color: #fff;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     cursor: pointer;
-    margin: 0 auto; /* Center the button using margin auto */
-    margin-top: 20px; /* Add margin at the top for spacing */
+    margin-top: 20px;
+    margin-left: auto; /* Center the Submit button */
+    margin-right: auto; /* Center the Submit button */
   }
   
-  /* Style the result display area */
+  .submit-btn-container {
+    text-align: center;
+  }
+  
   .result {
-    font-size: 18px; /* Adjust the font size for the result */
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 15px; /* Add margin at the top for spacing */
-    text-align: left; /* Align the text to the left */
+    margin-top: 15px;
+    text-align: left;
   }
   
