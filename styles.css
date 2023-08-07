@@ -16,7 +16,8 @@ body {
     border-radius: 5px;
     background-color: #f9f9f9;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Add box-shadow for 3D effect */
+}
   
   .input-field,
   label {
@@ -85,4 +86,21 @@ body {
     margin-top: 15px;
     text-align: left;
   }
+  
+  
+/* Style the input field to be a transparent green with vertical lines like a calulator screen. */
+  .input-field {
+    /* Set a background image with repeating vertical lines */
+    background-image: repeating-linear-gradient(to right, #000 0, #000 1px, transparent 1px, transparent 32px);
+    /* Add some padding to create space between the content and the input field edges */
+    padding: 5px;
+    /* Set the text color to black */
+    color: #000;
+    /* Add a border to create a distinct input area */
+    border: 1px solid #000;
+    /* Add border radius for a more rounded look */
+    border-radius: 3px;
+    background-color: rgb(136, 205, 115, 0.5);
+  }
+  
   
