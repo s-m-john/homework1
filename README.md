@@ -18,15 +18,23 @@ npm init -y
 
 npm install express localtunnel
 
-node server.js
+node server.js (run this when ever the server is down/stops working)
 
 npm install -g localtunnel
 
-lt --port 3000
+lt --port 3000 or lt --port 5000
 
-url: https://brave-radios-bet.loca.lt
+url: https://twenty-pumas-drive.loca.lt
 
 
 To get your public IP address you can do any one of these:
 
 If you're running localtunnel on a local computer, go to this link in your browser: https://ipv4.icanhazip.com
+
+OR 
+
+https://ngrok.com/download
+
+ brew install ngrok/ngrok/ngrok
+
+ ngrok http 80

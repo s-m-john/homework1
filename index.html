@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sum Calculator</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Sum Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Sum Calculator</h1>
-  <input type="text" id="num1" placeholder="Enter first number">
-  <input type="text" id="num2" placeholder="Enter second number">
-  <button onclick="calculateSum()">Calculate</button>
-  <p id="result">Result will be displayed here.</p>
-  <script src="script.js"></script>
+    <h1 style="font-family: 'Roboto Mono', monospace;">
+        <i class="fas fa-calculator" style="color: #4774c3;"></i> <!-- Font Awesome calculator icon -->
+        Sum Calculator
+    </h1>
+    <div class="calculator-container">
+        <div class="instruction-box">Please enter the two numbers you would like to add below
+
+        </div>
+        <div class="input-row">
+            <label for="firstNumber">Enter first number:</label>
+            <input type="text" id="firstNumber" class="input-field" />
+        </div>
+        <div class="input-row">
+            <i class="fa-solid fa-plus fa-2xl" style="color: #4180df;"></i> <!-- Larger plus sign icon -->
+        </div>
+        <div class="input-row">
+            <label for="secondNumber">Enter second number:</label>
+            <input type="text" id="secondNumber" class="input-field" />
+        </div>
+        <div class="submit-btn-container">
+            <button class="submit-btn" onclick="calculateSum()">Submit</button>
+        </div>
+        <div class="result">Result: <span id="sumResult"></span></div> <!-- Container for displaying the result -->
+    </div>
+    <script src="script.js"></script> <!-- Include the script file -->
 </body>
 </html>

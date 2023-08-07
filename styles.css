@@ -1,28 +1,128 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-image: url("source/images/pawel-czerwinski-Qiy4hr18aGs-unsplash.jpg");
+    /* Adjust the background size and position */
+    background-size: cover;
+    background-position: center;
+    /* Set a fallback background color in case the image doesn't load */
+    background-color: #f9f9f9;
   }
   
   h1 {
-    color: #007bff;
+    text-align: center;
   }
   
-  input {
-    margin: 10px;
-    padding: 5px;
+  .calculator-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    background-image: url("source/images/nordwood-themes-R53t-Tg6J4c-unsplash.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Add box-shadow for 3D effect */
+}
+  
+  .input-field,
+  label {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
   
-  button {
-    padding: 8px 20px;
+  label {
+    color: red;
+  }
+  
+  .input-field {
+    color: black;
+  }
+  
+  .input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  /* Adjust the position and spacing between the elements in the input row */
+  .input-row label,
+  .input-row input {
+    margin-right: 5px;
+  }
+  
+  .fa-plus {
+    margin-left: 200px; /* Move the plus sign more to the right */
+    margin-top: -7px; /* Use the 2xl plus sign size */
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
     background-color: #007bff;
     color: #fff;
-    border: none;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
     cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto; /* Center the Submit button */
+    margin-right: auto; /* Center the Submit button */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Add box shadow to the button */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
   }
   
-  #result {
-    font-size: 24px;
-    font-weight: bold;
-    color: #007bff;
+  /* Style the button on hover */
+  .submit-btn:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add larger shadow on hover */
   }
+  
+  .submit-btn-container {
+    text-align: center;
+  }
+  
+  .result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  
+/* Style the input field to be a transparent green with vertical lines like a calulator screen. */
+  .input-field {
+    /* Set a background image with repeating vertical lines */
+    background-image: repeating-linear-gradient(to right, #000 0, #000 .5px, transparent 1.5px, transparent 32px);
+    /* Add some padding to create space between the content and the input field edges */
+    padding: 5px;
+    /* Set the text color to black */
+    color: #000;
+    /* Add a border to create a distinct input area */
+    border: 1px solid #000;
+    /* Add border radius for a more rounded look */
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    background-color: rgb(136, 205, 115, 0.5);
+    text-align: right; /* Align the text to the right just like on a calculator*/
+  }
+
+.instruction-box {
+    background-color: rgba(136, 205, 115, 0.5); /* Transparent green background */
+    border: 3px solid #000; /* Thick black border */
+    padding: 10px; /* Add some padding inside the box */
+    text-align: center; /* Center the text inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to the box */
+    margin-bottom: 20px; /* Add some space between the box and the input fields */
+  }
+  
+  /* Your existing styles ... */
+  
   
